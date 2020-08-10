@@ -1,6 +1,213 @@
+@import "./fonts.scss";
+
+
+$padding-large: 324px;
+$padding-medium: 15vw;
+$padding-small: 16px;
+
 body, html{
     padding: 0;
     margin: 0;
 
+    font-size: 14px;
     ////
 }
+
+.main_wrapper{
+
+}
+
+.header_wrapper{
+    background: #008000;
+    height: 112px;
+}
+
+.footer_wrapper{
+    background: #29a9c9;
+    height: 500px;
+}
+
+.shipping_alert_wrapper{
+    background: #00557B;
+    padding: 66px $padding-large;
+
+    p{
+        max-width: 500px;
+        font-family: Gotham Pro Narrow;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 23px;
+        line-height: 30px;
+        color: #FFFFFF;
+        margin:0px
+    }
+
+    .logo{
+        margin-top: 48px;
+    }
+
+    @media screen and (max-width: 1440px) {
+        padding: 66px $padding-medium;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 66px $padding-small;
+    }
+}
+
+
+.pickup_wrapper{
+    background: #434343;
+    padding: 66px $padding-large;
+    @media screen and (max-width: 1440px) {
+        padding: 66px $padding-medium;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 66px $padding-small;
+    }
+    
+}
+
+.pickup_title{
+    font-family: Gotham Pro;
+    font-size: 15px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+
+    margin-bottom: 36px;
+
+   
+}
+
+
+.pickup_list_wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &>*:not(:last-child){
+        margin-right: 32px;
+    }
+
+    @media screen and (max-width: 1440px) {
+        flex-direction: column;
+        &>*:not(:last-child){
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.pickup_list{
+    display: flex;
+    flex-direction: row;
+   
+
+    &>*:not(:last-child){
+        margin-right: 32px;
+    }
+
+    @media screen and (max-width: 600px) {
+        flex-direction: column;
+
+        &>*:not(:last-child){
+            margin-right: 0px;
+            margin-bottom: 32px;
+        }
+    }
+
+}
+
+.pickup_item{
+    width: 224px;
+    color: #FFFFFF;
+    
+    .title{
+        font-family: Gotham Pro;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 17px;
+        letter-spacing: 0.01em;
+        
+    }
+    .address{
+        font-family: Gotham Pro;
+        font-size: 14px;
+        line-height: 133.2%;
+        letter-spacing: 0.01em;
+    }
+    .contact{
+        font-family: Gotham Pro;
+        font-size: 14px;
+        line-height: 133.2%;
+        letter-spacing: 0.01em;
+    }
+}
+
+
+.payment_wrapper{
+    background: #F4F6F8;
+    padding: 66px $padding-large 30px $padding-large;
+    @media screen and (max-width: 1440px) {
+        padding: 66px $padding-medium;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 66px $padding-small;
+    }
+    
+}
+
+.payment_title{
+    font-family: Gotham Pro;
+    font-size: 15px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #434343;
+
+    margin-bottom: 36px;
+
+   
+}
+
+.payment_list{
+    display: flex;
+    flex-direction: row;
+   flex-wrap: wrap;
+
+   &>*:not(:last-child){
+        margin-right: 32px;
+    }
+
+    @media screen and (max-width: 1440px) {
+        &>*{
+            margin-right: 32px;
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        &>*:not(:last-child){
+            margin-bottom: 32px;
+        }
+    }
+
+}
+
+.payment_item{
+    width: 224px;
+    color: #434343;
+    margin-bottom: 36px;
+    .title{
+        font-family: Gotham Pro;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 17px;
+        letter-spacing: 0.01em;
+        margin-bottom: 16px;
+    }
+    .description{
+        font-family: Gotham Pro;
+        font-size: 14px;
+        line-height: 133.2%;
+        letter-spacing: 0.01em;
+    }
+}
+
