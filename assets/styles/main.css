@@ -1,0 +1,179 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat;
+}
+
+.header {
+  position: relative;
+  background: #3c3e3b;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header_logo img {
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-transform: rotate(-45deg) translate(-15%, -55%);
+          transform: rotate(-45deg) translate(-15%, -55%);
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  -webkit-filter: brightness(0.45) contrast(0.63) saturate(54%);
+          filter: brightness(0.45) contrast(0.63) saturate(54%);
+}
+
+@media screen and (max-width: 600px) {
+  .header_logo img {
+    -webkit-transform: rotate(-16deg) translate(-39%, -42%) scale(0.4);
+            transform: rotate(-16deg) translate(-39%, -42%) scale(0.4);
+  }
+}
+
+.header_title {
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: white;
+  font-family: 'Yeseva One';
+  font-size: 56px;
+  max-width: 70vw;
+  width: 70%;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .header_title {
+    font-size: 24px;
+    width: 90%;
+    max-width: 95vw;
+  }
+}
+
+.header_shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#330d69), to(#30c9cd));
+  background: linear-gradient(#330d69, #30c9cd);
+  mix-blend-mode: saturation;
+  opacity: 0.04;
+}
+
+.main_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content_wrapper {
+  padding: 48px 0px;
+  max-width: 800px;
+}
+
+@media screen and (max-width: 600px) {
+  .content_wrapper {
+    max-width: 100%;
+    padding: 48px 16px;
+  }
+}
+
+h1 {
+  font-family: 'Yeseva One';
+  font-size: 36px;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  font-family: 'Yeseva One';
+  font-size: 32px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  h2 {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-family: 'Yeseva One';
+  font-size: 24px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+  h3 {
+    font-size: 18px;
+  }
+}
+
+.paragraph {
+  font-size: 24px;
+  line-height: 36px;
+  font-family: 'Forum', cursive;
+}
+
+@media screen and (max-width: 600px) {
+  .paragraph {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.quote_wrapper {
+  padding: 8px 0px 24px 0px;
+  border-top: #c7c7c7 solid 1px;
+  border-bottom: #c7c7c7 solid 1px;
+  margin: 0px 32px;
+}
+
+@media screen and (max-width: 600px) {
+  .quote_wrapper {
+    margin: 0px 8px;
+  }
+}
+
+.quote_text {
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+  word-spacing: 4px;
+  font-style: italic;
+  color: #6f6f6f;
+  padding: 16px 0px;
+}
+
+@media screen and (max-width: 600px) {
+  .quote_text {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+.quote_author {
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: end;
+  padding: 0px 40px;
+}
+/*# sourceMappingURL=main.css.map */
