@@ -1,0 +1,179 @@
+@import "./fonts.scss";
+
+
+$padding-large: 324px;
+$padding-medium: 15vw;
+$padding-small: 16px;
+
+body, html{
+    padding: 0;
+    margin: 0;
+
+    font-size: 14px;
+    ////
+}
+
+.main_wrapper{
+
+}
+
+.header_wrapper{
+    background: #008000;
+    height: 112px;
+}
+
+.footer_wrapper{
+    background: #29a9c9;
+    height: 500px;
+}
+
+.default_wrapper{
+    background: #00557B;
+    padding: 66px $padding-large;
+
+    @media screen and (max-width: 1440px) {
+        padding: 66px $padding-medium;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 66px $padding-small;
+    }
+}
+
+.store_wrapper{
+    padding: 66px $padding-large;
+    @media screen and (max-width: 1440px) {
+        padding: 66px $padding-medium;
+    }
+    @media screen and (max-width: 600px) {
+        padding: 66px $padding-small;
+    }
+}
+
+
+
+
+.card{
+    font-family: Gotham Pro;
+    width: 274px;
+    background: #F4F6F8;
+    border: solid 0.5px #00557B;
+
+    .card_header{
+        padding: 20px 20px 14px 16px;
+        
+        .title{
+            display: flex;
+            margin-bottom: 6px;
+            justify-content: space-between;
+
+                .name{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 13px;
+                    color: #000000;
+                }
+                .weight{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    color: #656565;
+                }
+        }
+        .subtitle{
+            text-transform: uppercase;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 11px;
+            color: #000;
+        }  
+        
+    }
+    
+    .image{
+        width: 100%;
+        img{
+            width: 100%;
+            object-fit: cover;
+            height: 268px;
+        }  
+    }
+
+    .card_actions{
+            display: flex;
+            padding: 10px 20px 20px 18px;
+            justify-content: space-between;
+
+            .discount{
+                font-family: Gotham Pro;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 12px;
+                letter-spacing: -0.04em;
+                color: #656565;
+                margin-bottom: -3px;
+                text-decoration: line-through;
+
+                //visibility: hidden;
+            }
+            .value{
+                font-family: Gotham Pro;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 23px;
+            
+                color: #DC4444;
+            }
+
+            .actions_buttons{
+                display: flex;
+                align-items: flex-end;
+                    
+                    .compare{
+                        margin-right: 13px;
+                    }
+                    .compare:hover{
+                        margin-right: 13px;
+                        fill: #DC4444;
+                    }
+
+                    .add_button{
+                        fill: #DC4444;
+                        //display: none;
+                    }
+
+                    .count_picker_block{                      
+                        display: flex;
+                        justify-content: space-between;
+
+                        display: none;
+
+                        .count_picker{
+                            font-family: Gotham Pro;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 23px;                        
+                            color: #DC4444;
+
+                            //display: none;                        
+                        }
+
+                        .trangles{
+                            position: relative;
+                            top: 2px;
+                            left: 2px;
+                        }
+
+                    }
+            }
+            
+    }
+
+    &.discount{
+        
+    }
+    &.added{
+        
+    }
+}
